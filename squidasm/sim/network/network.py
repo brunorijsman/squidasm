@@ -480,6 +480,7 @@ class QDevice(QuantumProcessor):
         PhysicalInstruction(ns_instructions.INSTR_ROT_Y, duration=1e3),
         PhysicalInstruction(ns_instructions.INSTR_ROT_Z, duration=1e3),
         PhysicalInstruction(ns_instructions.INSTR_CNOT, duration=5e5),
+        PhysicalInstruction(ns_instructions.INSTR_CROT_Z, duration=5e5),
         PhysicalInstruction(ns_instructions.INSTR_CZ, duration=5e5),
     ]
 
