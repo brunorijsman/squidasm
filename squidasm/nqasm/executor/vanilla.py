@@ -6,6 +6,7 @@ from netqasm.lang.instr.flavour import Flavour
 from netsquid.components import Instruction as NetSquidInstruction
 from netsquid.components.instructions import (
     INSTR_CNOT,
+    INSTR_CROT_Z,
     INSTR_CZ,
     INSTR_H,
     INSTR_INIT,
@@ -40,6 +41,7 @@ VANILLA_NS_INSTR_MAPPING: T_InstrMap = {
     vanilla.RotZInstruction: INSTR_ROT_Z,
     vanilla.CnotInstruction: INSTR_CNOT,
     vanilla.CphaseInstruction: INSTR_CZ,
+    vanilla.ControlledRotZInstruction: INSTR_CROT_Z,
     vanilla.MovInstruction: INSTR_SWAP,
 }
 

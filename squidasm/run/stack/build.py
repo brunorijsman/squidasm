@@ -1,6 +1,7 @@
 import numpy as np
 from netsquid.components.instructions import (
     INSTR_CNOT,
+    INSTR_CROT_Z,
     INSTR_CXDIR,
     INSTR_CYDIR,
     INSTR_CZ,
@@ -59,7 +60,7 @@ def build_generic_qdevice(name: str, cfg: GenericQDeviceConfig) -> QuantumProces
             )
         )
 
-    for instr in [INSTR_CNOT, INSTR_CZ]:
+    for instr in [INSTR_CNOT, INSTR_CZ, INSTR_CROT_Z]:
         phys_instructions.append(
             PhysicalInstruction(
                 instr,
